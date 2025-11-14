@@ -3,6 +3,11 @@ body {
   font-family: "Cal Sans", sans-serif;
   color: #ffffff;
   background-color: #000000;
+  background-image: url("../assets/img/background-inicio.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* fondo queda fijo al viewport */
 }
 
 /* NAVBAR  */
@@ -47,10 +52,8 @@ body {
 }
 
 /* SECCIÓN INICIO */
-.inicio {
-  background-image: url("../assets/img/background-inicio.png");
-  background-size: cover;
-  background-position: center;
+.inicio{
+  min-height: 100vh;
 }
 
 /* Contenedor inicio */
@@ -322,6 +325,171 @@ body {
   color: #000000;
   border: 1px solid #ffffff;
 }
+
+/* ================= SECCIÓN EVENTOS ================= */
+
+.eventos {
+  min-height: 100vh;
+}
+
+.eventos-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Encabezado */
+
+.eventos-header-row {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.eventos-titulo {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.eventos-subtitulo {
+  font-size: 15px;
+  color: #d9d9d9;
+}
+
+/* Calendario / filtro visual */
+
+.eventos-calendario {
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 32px;
+  background-color: #111111;
+}
+
+.eventos-calendario-titulo {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 0 0 8px 0;
+}
+
+.eventos-meses {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.eventos-mes {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #333333;
+  color: #ffffff;
+}
+
+.eventos-mes.activo {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+/* Próximos eventos */
+
+.eventos-proximos-row {
+  margin-bottom: 40px;
+}
+
+.evento-card {
+  background-color: #111111;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.evento-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.evento-card-body {
+  padding: 16px;
+}
+
+.evento-etiqueta {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #444444;
+  margin-bottom: 10px;
+}
+
+.evento-card-titulo {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+
+.evento-card-lugar {
+  font-size: 13px;
+  color: #cccccc;
+  margin: 0 0 4px 0;
+}
+
+.evento-card-fecha {
+  font-size: 13px;
+  color: #cccccc;
+  margin: 0 0 10px 0;
+}
+
+.evento-card-boton {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 24px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.evento-card-boton:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Beneficios */
+
+.eventos-beneficios-row {
+  margin-top: 16px;
+}
+
+.beneficio-card {
+  background-color: #111111;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  padding: 18px;
+  height: 100%;
+}
+
+.beneficio-titulo {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.beneficio-texto {
+  font-size: 13px;
+  color: #d9d9d9;
+  margin: 0;
+}
+
+
 
 /* RESPONSIVE */
 @media (max-width: 991.98px) {
