@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  font-family: "Cal Sans", sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* NAVBAR  */
+.nav-xpresso {
+  background: #000000;
+}
+
+.nav-logo {
+  height: 90px;
+  width: auto;
+}
+
+/* Lista de links de la nav */
+.nav-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Estilos para los links de la nav */
+.nav-xpresso .nav-link {
+  color: #ffffff !important;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding: 6px 16px !important;
+  text-decoration: none;
+}
+
+.nav-xpresso .nav-link:hover {
+  background: #ffffff;
+  color: #000000 !important;
+}
+
+/* Burger */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("/assets/img/icono-menu.png");
+  height: 30px;
+  width: 20px;
+}
+
+/* SECCIÓN INICIO */
+.inicio {
+  background-image: url("../assets/img/background-inicio.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Contenedor inicio */
+.inicio-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Fila del título/subtítulos */
+.inicio-header-row {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* Bloques de cartas */
+.inicio-cards-row {
+  row-gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* Fila de evento y newsletter */
+.inicio-main-row {
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 48px;
+}
+
+.titulo-inicio {
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.subtitulo-inicio {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.texto-inicio {
+  font-size: 15px;
+}
+
+/* TARJETAS CON IMAGEN */
+.card-xpresso {
+  background-color: #111111;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-body-xpresso {
+  padding: 14px;
+  text-align: center;
+}
+
+.card-body-xpresso h4 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.card-body-xpresso p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Botón dentro de carta */
+.boton-card {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 14px;
+}
+
+.boton-card:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* EVENTO DESTACADO CON IMAGEN */
+.evento-col {
+  margin-bottom: 24px;
+}
+
+.evento-destacado {
+  background-color: #1a262e;
+  color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.evento-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.evento-body {
+  padding: 18px;
+}
+
+.evento-body h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.evento-body p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.boton-evento {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 18px;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.boton-evento:hover {
+  background: #46677c;
+  color: #ffffff;
+}
+
+/* FOOTER */
+.footer-xpresso {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  border-top: 1px solid #3a3a3a;
+  margin-top: 48px;
+}
+
+.footer-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Fila del footer */
+.footer-row {
+  text-align: center;
+}
+
+/* Columnas del footer */
+.footer-column {
+  margin-bottom: 24px;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 12px;
+}
+
+.footer-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-text {
+  font-size: 13px;
+  margin: 4px 0;
+  color: #cccccc;
+}
+
+/* Lista de enlaces */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 6px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Línea final */
+.footer-bottom {
+  border-top: 1px solid #3a3a3a;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #cccccc;
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* NEWSLETTER */
+.newsletter-box {
+  background-image: url(/assets/img/newlester2.png);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #333333;
+}
+
+.newsletter-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.newsletter-box p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #d9d9d9;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.newsletter-form button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px) {
+  .nav-xpresso .nav-link {
+    display: block;
+    text-align: center;
+    padding: 10px 16px !important;
+    border: 0;
+  }
+
+  .nav-logo {
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-row {
+    text-align: left;
+  }
+
+  .footer-column {
+    margin-bottom: 0;
+  }
+
+  .evento-col {
+    margin-bottom: 0;
+  }
+}
