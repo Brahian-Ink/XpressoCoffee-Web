@@ -51,9 +51,12 @@ body {
   width: 20px;
 }
 
-/* SECCIÓN INICIO (pendiente de ajustar en index) */
+/* ================= SECCIÓN INICIO ================= */
+
 .inicio {
   min-height: 100vh;
+  backdrop-filter: blur(3px);
+
 }
 
 .inicio-container {
@@ -76,6 +79,7 @@ body {
   justify-content: center;
   align-items: stretch;
   margin-top: 48px;
+  gap: 50px;
 }
 
 .inicio h1 {
@@ -94,11 +98,10 @@ body {
   font-size: 15px;
 }
 
-/* TARJETAS CON IMAGEN (INICIO) */
+/* Tarjetas con imagen */
 .card-xpresso {
-  background-color: #111111;
+  background-color: #000000;
   border-radius: 10px;
-  border: 1px solid #262626;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -121,7 +124,7 @@ body {
 }
 
 .card-body-xpresso p {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -140,10 +143,7 @@ body {
   color: #000000;
 }
 
-/* EVENTO DESTACADO (INICIO) */
-.evento-col {
-  margin-bottom: 24px;
-}
+/* Evento destacado */
 
 .evento-destacado {
   background-color: #1a262e;
@@ -170,88 +170,12 @@ body {
 
 .evento-body p {
   margin: 4px 0;
-  font-size: 14px;
+  font-size: 15px;
 }
 
-
-/* FOOTER */
-footer {
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 14px;
-  border-top: 1px solid #3a3a3a;
-  margin-top: 48px;
-}
-
-.footer-container {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.footer-row {
-  text-align: center;
-}
-
-.footer-column {
-  margin-bottom: 24px;
-  
-}
-
-.footer-logo {
-  height: 60px;
-  width: auto;
-  margin-bottom: 12px;
-}
-
-footer h5 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-footer p {
-  font-size: 13px;
-  margin: 4px 0;
-  color: #ffffff;
-}
-
-/* Lista de enlaces footer */
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-right: 1px solid #1d1d1d;
-  border-left: 1px solid #1d1d1d;
-}
-
-footer li {
-  margin: 6px 0;
-}
-
-footer a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-footer a:hover {
-  color: #9e9e9e;
-}
-
-/* Línea final */
-.footer-bottom {
-  border-top: 1px solid #1d1d1d;
-  padding-top: 10px;
-  font-size: 12px;
-  color: #cccccc;
-  text-align: center;
-  margin-top: 16px;
-}
-
-/* NEWSLETTER (HOME) */
+/* Newsletter */
 .newsletter-box {
-  background-image: url(/assets/img/newlester2.png);
+  background-image: url(/assets/img/newsletter2.png);
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -262,7 +186,6 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border: 1px solid #333333;
 }
 
 .newsletter-box h3 {
@@ -272,9 +195,9 @@ footer a:hover {
 }
 
 .newsletter-box p {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 16px;
-  color: #d9d9d9;
+  color: #ffffff;
 }
 
 .newsletter-form {
@@ -312,6 +235,8 @@ footer a:hover {
 
 .eventos {
   min-height: 100vh;
+  backdrop-filter: blur(3px);
+
 }
 
 .eventos-container {
@@ -327,14 +252,14 @@ footer a:hover {
 }
 
 .eventos-header-row h1 {
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
 
 .eventos-header-row p {
   font-size: 15px;
-  color: #d9d9d9;
+  color: #ffffff;
 }
 
 /* Calendario / filtro visual */
@@ -349,7 +274,7 @@ footer a:hover {
 }
 
 .eventos-calendario p {
-  font-size: 18px;
+  font-size: 15px;
   color: #ffffff;
   margin: 0 0 8px 0;
 }
@@ -386,10 +311,9 @@ footer a:hover {
 }
 
 .evento-card {
-  background-color: #111111;
+  background-color: #000000;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #262626;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -412,7 +336,7 @@ footer a:hover {
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: 20px;
-  border: 1px solid #444444;
+  border: 1px solid #8a8a8a;
   margin-bottom: 10px;
 }
 
@@ -422,8 +346,8 @@ footer a:hover {
 }
 
 .evento-card p {
-  font-size: 13px;
-  color: #d9d9d9;
+  font-size: 15px;
+  color: #ffffff;
   margin: 0 0 4px 0;
 }
 
@@ -449,9 +373,8 @@ footer a:hover {
 }
 
 .beneficio-card {
-  background-color: #111111;
+  background-color: #000000;
   border-radius: 12px;
-  border: 1px solid #262626;
   padding: 18px;
   height: 100%;
 }
@@ -462,12 +385,182 @@ footer a:hover {
 }
 
 .beneficio-card p {
-  font-size: 13px;
-  color: #d9d9d9;
+  font-size: 15px;
+  color: #ffffff;
   margin: 0;
 }
 
+/* ================= SECCIÓN NOSOTROS ================= */
+
+.nosotros {
+  min-height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+.nosotros-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Encabezado */
+
+.nosotros-header-row {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nosotros-header-row h1 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.nosotros-header-row p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* Bloque historia */
+
+.Nosotros-bloque {
+  align-items: center;
+  margin-bottom: 0px;
+  background-color: #000000;
+  background-image: url(/assets/img/coffee-background.png); 
+}
+.Nosotros-bloque .col-md-6{
+ margin: 0;
+ padding: 0;
+}
+
+.nosotros-texto h2 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.nosotros-texto p {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.nosotros-imagen img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+/* Valores */
+
+.nosotros-valores-row {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.nosotros-valores-row h2 {
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.valor-card {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 18px;
+  height: 100%;
+}
+.nosotros-valores-row .col-md-4{
+  padding-bottom: 50px;
+}
+
+.valor-card h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.valor-card p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-row {
+  text-align: center;
+}
+
+.footer-column {
+  margin-bottom: 24px;
+  
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 12px;
+}
+
+footer h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 4px 0;
+  color: #ffffff;
+}
+
+/* Lista de enlaces footer */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #1d1d1d;
+  border-left: 1px solid #1d1d1d;
+}
+
+.footer-column li {
+  margin: 6px 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-column a:hover {
+  color: #9e9e9e;
+}
+
+/* Línea final */
+.footer-bottom {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #cccccc;
+  text-align: center;
+  margin-top: 16px;
+}
+
 /* RESPONSIVE */
+
+/* Tablet y abajo */
 @media (max-width: 991.98px) {
   .nav-list a {
     display: block;
@@ -479,9 +572,35 @@ footer a:hover {
   .nav-logo {
     height: 80px;
   }
+
+   .nosotros-bloque {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nosotros-texto h2{
+    font-size: 30px;
+    text-align: center;
+  }
+  .nosotros-texto p{
+    font-size: 13px;
+    text-align: center;
+  }
+  .nosotros-valores-row h2{
+     font-size: 30px;
+     text-align: center;
+  }
+  .valor-card p{
+     font-size: 13px;
+     text-align: center;
+  }
+ 
 }
 
-@media (max-width: 768px) {
+/* Mobile */
+@media (max-width: 767.98px) {
+
+  /* Home / Eventos */
   .footer-logo {
     height: 50px;
   }
@@ -493,28 +612,74 @@ footer a:hover {
   .beneficio-card {
     margin-bottom: 16px;
   }
-}
-
-@media (min-width: 768px) {
-  
-  .footer-column {
-    margin-bottom: 0;
+  .eventos-beneficios-row{
+    gap: 24px;
   }
-
-  .evento-col {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 767px) {
   .eventos-proximos-row {
-    gap: 50px;
+    gap: 24px;
   }
 
   .eventos-meses {
     justify-content: space-around;
   }
-  .beneficio-card {
+
+  /* NOSOTROS */
+  .nosotros-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .nosotros-header-row {
     display: none;
   }
+
+
+  .nosotros-texto {
+    text-align: center;
+    
+  }
+
+  .nosotros-texto h2 {
+    font-size: 24px;
+  }
+ .nosotros-texto p{
+  font-size: 15px;
+ }
+  .nosotros-valores-row {
+    text-align: center;
+  
+  }
+
+  .nosotros-valores-row h2 {
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .nosotros-valores-row .col-md-4 {
+      margin-bottom: 0px;
+    }
+
+  .valor-card {
+    margin-bottom: 16px;
+    border: 0px;
+  }
+ .valor-card p{
+  font-size: 15px;
+ }
+  .equipo-card {
+    margin-bottom: 16px;
+  }
+
+  /* FOOTER */
+  .footer-column {
+    margin-bottom: 5px;
+  }
+
+  .footer-column ul {
+    border-top: 1px solid #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+    border-right: 0;
+    border-left: 0;
+  }
 }
+
