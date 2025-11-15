@@ -55,6 +55,8 @@ body {
 
 .inicio {
   min-height: 100vh;
+  backdrop-filter: blur(3px);
+
 }
 
 .inicio-container {
@@ -77,6 +79,7 @@ body {
   justify-content: center;
   align-items: stretch;
   margin-top: 48px;
+  gap: 50px;
 }
 
 .inicio h1 {
@@ -99,7 +102,6 @@ body {
 .card-xpresso {
   background-color: #000000;
   border-radius: 10px;
-  border: 1px solid #222222;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -122,7 +124,7 @@ body {
 }
 
 .card-body-xpresso p {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -142,9 +144,6 @@ body {
 }
 
 /* Evento destacado */
-.evento-col {
-  margin-bottom: 24px;
-}
 
 .evento-destacado {
   background-color: #1a262e;
@@ -171,17 +170,327 @@ body {
 
 .evento-body p {
   margin: 4px 0;
-  font-size: 14px;
+  font-size: 15px;
 }
 
+/* Newsletter */
+.newsletter-box {
+  background-image: url(/assets/img/newsletter2.png);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsletter-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.newsletter-box p {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.newsletter-form button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+/* ================= SECCIÓN EVENTOS ================= */
+
+.eventos {
+  min-height: 100vh;
+  backdrop-filter: blur(3px);
+
+}
+
+.eventos-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Encabezado */
+.eventos-header-row {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.eventos-header-row h1 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.eventos-header-row p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* Calendario / filtro visual */
+.eventos-calendario {
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 32px;
+  background-image: url(/assets/img/coffee-background.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.eventos-calendario p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+
+.eventos-meses {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.eventos-meses li {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  backdrop-filter: blur(10px);    /*Fondo borroso*/
+}
+
+.eventos-meses li:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+/* Próximos eventos */
+.eventos-proximos-row {
+  margin-bottom: 16px;
+}
+
+.evento-card {
+  background-color: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.evento-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.evento-card-body {
+  padding: 16px;
+}
+
+.evento-etiqueta {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #8a8a8a;
+  margin-bottom: 10px;
+}
+
+.evento-card h3 {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+
+.evento-card p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.evento-card a {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 24px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.evento-card a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Beneficios */
+.eventos-beneficios-row {
+  margin-top: 0;
+}
+
+.beneficio-card {
+  background-color: #000000;
+  border-radius: 12px;
+  padding: 18px;
+  height: 100%;
+}
+
+.beneficio-card h4 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.beneficio-card p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ================= SECCIÓN NOSOTROS ================= */
+
+.nosotros {
+  min-height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+.nosotros-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Encabezado */
+
+.nosotros-header-row {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nosotros-header-row h1 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.nosotros-header-row p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* Bloque historia */
+
+.Nosotros-bloque {
+  align-items: center;
+  margin-bottom: 0px;
+  background-color: #000000;
+  background-image: url(/assets/img/coffee-background.png); 
+}
+.Nosotros-bloque .col-md-6{
+ margin: 0;
+ padding: 0;
+}
+
+.nosotros-texto h2 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.nosotros-texto p {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.nosotros-imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Valores */
+
+.nosotros-valores-row {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.nosotros-valores-row h2 {
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.valor-card {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 18px;
+  height: 100%;
+}
+.nosotros-valores-row .col-md-4{
+  padding-bottom: 50px;
+}
+
+.valor-card h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.valor-card p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+}
 
 /* FOOTER */
 footer {
   background-color: #000000;
   color: #ffffff;
   font-size: 14px;
-  border-top: 1px solid #3a3a3a;
-  margin-top: 48px;
 }
 
 .footer-container {
@@ -242,7 +551,6 @@ footer p {
 
 /* Línea final */
 .footer-bottom {
-  border-top: 1px solid #1d1d1d;
   padding-top: 10px;
   font-size: 12px;
   color: #cccccc;
@@ -250,352 +558,9 @@ footer p {
   margin-top: 16px;
 }
 
-/* Newsletter */
-.newsletter-box {
-  background-image: url(/assets/img/newlester2.png);
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid #222222;
-}
-
-.newsletter-box h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-
-.newsletter-box p {
-  font-size: 14px;
-  margin-bottom: 16px;
-  color: #ffffff;
-}
-
-.newsletter-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.newsletter-form input {
-  width: 80%;
-  padding: 8px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  text-align: center;
-}
-
-.newsletter-form button {
-  padding: 8px 20px;
-  border-radius: 20px;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.newsletter-form button:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #ffffff;
-}
-
-/* ================= SECCIÓN EVENTOS ================= */
-
-.eventos {
-  min-height: 100vh;
-}
-
-.eventos-container {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-/* Encabezado */
-.eventos-header-row {
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.eventos-header-row h1 {
-  font-size: 28px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-.eventos-header-row p {
-  font-size: 15px;
-  color: #ffffff;
-}
-
-/* Calendario / filtro visual */
-.eventos-calendario {
-  border-radius: 12px;
-  padding: 16px 20px;
-  margin-bottom: 32px;
-  background-image: url(/assets/img/coffee-background.png);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
-
-.eventos-calendario p {
-  font-size: 18px;
-  color: #ffffff;
-  margin: 0 0 8px 0;
-}
-
-.eventos-meses {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.eventos-meses li {
-  font-size: 13px;
-  padding: 6px 12px;
-  border-radius: 20px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  backdrop-filter: blur(10px);    /*Fondo borroso*/
-}
-
-.eventos-meses li:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
-}
-
-/* Próximos eventos */
-.eventos-proximos-row {
-  margin-bottom: 16px;
-}
-
-.evento-card {
-  background-color: #111111;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #222222;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.evento-card-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.evento-card-body {
-  padding: 16px;
-}
-
-.evento-etiqueta {
-  display: inline-block;
-  font-size: 11px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 20px;
-  border: 1px solid #8a8a8a;
-  margin-bottom: 10px;
-}
-
-.evento-card h3 {
-  font-size: 18px;
-  margin: 0 0 6px 0;
-}
-
-.evento-card p {
-  font-size: 13px;
-  color: #ffffff;
-  margin: 0 0 4px 0;
-}
-
-.evento-card a {
-  display: inline-block;
-  padding: 6px 16px;
-  border-radius: 24px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 13px;
-  margin-top: 6px;
-}
-
-.evento-card a:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Beneficios */
-.eventos-beneficios-row {
-  margin-top: 0;
-}
-
-.beneficio-card {
-  background-color: #111111;
-  border-radius: 12px;
-  border: 1px solid #222222;
-  padding: 18px;
-  height: 100%;
-}
-
-.beneficio-card h4 {
-  font-size: 16px;
-  margin: 0 0 8px 0;
-}
-
-.beneficio-card p {
-  font-size: 13px;
-  color: #ffffff;
-  margin: 0;
-}
-
-/* ================= SECCIÓN NOSOTROS ================= */
-
-.nosotros {
-  min-height: 100vh;
-}
-
-.nosotros-container {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-/* Encabezado */
-
-.nosotros-header-row {
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.nosotros-header-row h1 {
-  font-size: 28px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-.nosotros-header-row p {
-  font-size: 15px;
-  color: #ffffff;
-}
-
-/* Bloque historia */
-
-.Nosotros-bloque {
-  align-items: center;
-  margin-bottom: 40px;
-  background-color: #111111;
-  background-image: url(/assets/img/coffee-background.png);
-}
-
-.nosotros-texto h2 {
-  font-size: 60px;
-  margin-bottom: 10px;
-}
-
-.nosotros-texto p {
-  font-size: 17px;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.nosotros-imagen {
-  text-align: center;
-}
-
-.nosotros-imagen img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  padding: 10px;
-}
-
-/* Valores */
-
-.nosotros-valores-row {
-  margin-bottom: 40px;
-}
-
-.nosotros-valores-row h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.valor-card {
-  background-color: #111111;
-  border-radius: 12px;
-  border: 1px solid #222222;
-  padding: 18px;
-  height: 100%;
-}
-
-.valor-card h3 {
-  font-size: 16px;
-  margin: 0 0 8px 0;
-}
-
-.valor-card p {
-  font-size: 13px;
-  color: #ffffff;
-  margin: 0;
-}
-
-/* Equipo */
-
-.nosotros-equipo-row {
-  margin-top: 8px;
-}
-
-.nosotros-equipo-row h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.nosotros-equipo-row > .col-12 p {
-  font-size: 14px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.equipo-card {
-  background-color: #111111;
-  border-radius: 12px;
-  border: 1px solid #222222;
-  padding: 18px;
-  height: 100%;
-}
-
-.equipo-card h3 {
-  font-size: 16px;
-  margin: 0 0 8px 0;
-}
-
-.equipo-card p {
-  font-size: 13px;
-  color: #ffffff;
-  margin: 0;
-}
-
 /* RESPONSIVE */
+
+/* Tablet y abajo */
 @media (max-width: 991.98px) {
   .nav-list a {
     display: block;
@@ -607,9 +572,17 @@ footer p {
   .nav-logo {
     height: 80px;
   }
+
+   .nosotros-bloque {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
-@media (max-width: 768px) {
+/* Mobile */
+@media (max-width: 767.98px) {
+
+  /* Home / Eventos */
   .footer-logo {
     height: 50px;
   }
@@ -621,51 +594,69 @@ footer p {
   .beneficio-card {
     margin-bottom: 16px;
   }
-   .Nosotros-bloque {
-    margin-bottom: 32px;
+  .eventos-beneficios-row{
+    gap: 24px;
   }
-
-  .valor-card {
-    margin-bottom: 16px;
-  }
-
-  .equipo-card {
-    margin-bottom: 16px;
-  }
-}
-
-
-@media (max-width: 767px) {  /*Mobile*/
   .eventos-proximos-row {
-    gap: 50px;
+    gap: 24px;
   }
 
   .eventos-meses {
     justify-content: space-around;
   }
-  .beneficio-card {
+
+  /* NOSOTROS */
+  .nosotros-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .nosotros-header-row {
     display: none;
   }
-  .nosotros-valores-row{
-    gap: 20px;
+
+
+  .nosotros-texto {
+    text-align: center;
   }
-  .nosotros-equipo-row{
-    gap: 20px;
+
+  .nosotros-texto h2 {
+    font-size: 24px;
   }
+
+  .nosotros-valores-row {
+    text-align: center;
+  
+  }
+
+  .nosotros-valores-row h2 {
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .nosotros-valores-row .col-md-4 {
+      margin-bottom: 0px;
+    }
+
+  .valor-card {
+    margin-bottom: 16px;
+    border: 0px;
+  }
+
+  .equipo-card {
+    margin-bottom: 16px;
+  }
+
+  /* FOOTER */
   .footer-column {
-    margin-bottom: 5;
+    margin-bottom: 5px;
   }
- 
-.footer-column ul{
-   border-top: 1px solid #1d1d1d;
-  border-bottom: 1px solid #1d1d1d;
-  border-right: 0;
-  border-left: 0;
-}
 
-}
-
-  .evento-col {
-    margin-bottom: 0;
+  .footer-column ul {
+    border-top: 1px solid #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+    border-right: 0;
+    border-left: 0;
   }
+}
 
