@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="icon" href="/assets/img/logo.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Cafetería Xpresso</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-xpresso">
+      <div class="container-fluid">
+        <a href="/index.html">
+          <img class="nav-logo" src="/assets/img/logo.png" alt="Logo de Xpresso">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#xpressoNav" aria-controls="xpressoNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="xpressoNav">
+          <ul class="navbar-nav nav-list">
+            <li><a href="/index.html" aria-current="page">Inicio</a></li>
+            <li><a href="/pages/eventos.html">Eventos</a></li>
+            <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            <li><a href="/pages/galeria.html">Galería</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- EVENTOS -->
+  <section class="eventos">
+    <div class="container eventos-container">
+      <div class="row eventos-header-row">
+        <div class="col-md-10 col-lg-8">
+          <h1>Eventos Xpresso</h1>
+          <p>
+            Ferias, catas, talleres y más para quienes quieren vivir el café de especialidad
+            más allá de la taza. Descubrí qué estamos preparando para los próximos meses.
+          </p>
+        </div>
+      </div>
+      <!-- Calendario -->
+      <div class="row">
+        <div class="col-12">
+          <div class="eventos-calendario">
+            <p>Próximos meses</p>
+            <ul class="eventos-meses">
+              <li>MAYO</li>
+              <li>JUNIO</li>
+              <li>JULIO</li>
+              <li>AGOSTO</li>
+              <li>SEPTIEMBRE</li>
+              <li>OCTUBRE</li>
+              <li>NOVIEMBRE</li>
+              <li>DICIEMBRE</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Próximos eventos -->
+      <div class="row eventos-proximos-row">
+        <div class="col-md-4">
+          <article class="evento-card">
+            <img src="/assets/img/banner-event.png" class="evento-card-img" alt="Xpresso Coffee Fest Patagonia">
+            <div class="evento-card-body">
+              <span class="evento-etiqueta">FERIA</span>
+              <h3>Coffee Fest Patagonia</h3>
+              <p>Ushuaia · Centro Cultural del Fin del Mundo</p>
+              <p>15 y 16 de Mayo · 10:00 a 19:00 h</p>
+              <a href="#">Reservar lugar ↗</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="evento-card">
+            <img src="/assets/img/banner-cata.png" class="evento-card-img" alt="Noches de Cata">
+            <div class="evento-card-body">
+              <span class="evento-etiqueta">CATA</span>
+              <h3>Noches de Cata</h3>
+              <p>Buenos Aires · Espacio Xpresso</p>
+              <p> 24 de Mayo · 19:00 h</p>
+              <a href="#">Reservar lugar ↗</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="evento-card">
+            <img src="/assets/img/banner-tallerf.png" class="evento-card-img" alt="Taller para aprender métodos de filtrado">
+            <div class="evento-card-body">
+              <span class="evento-etiqueta">TALLER</span>
+              <h3>Inicio al filtrado</h3>
+              <p>Mendoza · Laboratorio Xpresso</p>
+              <p> 25 y 26 de Mayo · 10:30 h</p>
+              <a href="#">Inscribirme ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- Beneficios -->
+      <div class="row eventos-beneficios-row">
+        <div class="col-md-4">
+          <div class="beneficio-card">
+            <h4>Productores y tostadores</h4>
+            <p>
+              Conectá directo con quienes producen, tuestan y trabajan el café
+              de especialidad en distintas regiones del país.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="beneficio-card">
+            <h4>Catas guiadas</h4>
+            <p>
+              Aprendé a identificar aromas, acidez y cuerpo en cada taza con
+              baristas y catadores invitados.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="beneficio-card">
+            <h4>Comunidad Xpresso</h4>
+            <p>
+              Formá parte de una comunidad de personas que comparte la misma
+              curiosidad por el café y la gastronomía.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <div class="row footer-row">
+        <!-- Columna logo y descripción -->
+        <div class="col-md-4 footer-column">
+          <img src="/assets/img/logo.png" alt="Logo de Xpresso" class="footer-logo">
+          <p>
+            Desde 2020 compartimos la cultura del café de especialidad a través de ferias,
+            talleres y experiencias en toda la Argentina.
+          </p>
+        </div>
+        <!-- enlaces -->
+        <div class="col-md-4 footer-column">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/eventos.html">Eventos</a></li>
+            <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            <li><a href="/pages/galeria.html">Galería</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- contacto -->
+        <div class="col-md-4 footer-column">
+          <h5>Contacto</h5>
+          <p>Ushuaia, Tierra del Fuego</p>
+          <p>contacto@xpresso.com</p>
+          <p>+54 2901 123 456</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Xpresso — Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
