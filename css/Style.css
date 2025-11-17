@@ -485,8 +485,94 @@ body {
   color: #ffffff;
   margin: 0;
 }
+/* ================= MARCAS ================= */
 
-/* FOOTER */
+.marcas{
+  min-height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+.marcas-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.header-row {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-row h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.header-row p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* Sponsors */
+
+.productos-sponsors-row {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.productos-sponsors-row h2 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.sponsor-card {
+  background-color: transparent;
+}
+
+.sponsor-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Productos exclusivos */
+
+.productos-ex-row {
+  margin-top: 48px;
+}
+
+.productos-ex-row h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 22px;
+}
+
+.producto-card {
+  background-color: #ffffff09;
+  border-radius: 12px;
+  border: 1px solid#ffffff25;
+  backdrop-filter: blur(10px);
+  padding: 16px;
+  text-align: center;
+}
+
+.producto-card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.producto-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.producto-card p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* =========== FOOTER =========== */
 footer {
   background-color: #000000;
   color: #ffffff;
