@@ -46,7 +46,7 @@ body {
 
 /* Burger */
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("/assets/img/icono-menu.png");
+  background-image: url("../assets/img/icono-menu.png");
   height: 30px;
   width: 20px;
 }
@@ -174,7 +174,7 @@ body {
 
 /* Newsletter */
 .newsletter-box {
-  background-image: url(/assets/img/newsletter2.png);
+  background-image: url(../assets/img/newsletter2.png);
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -265,7 +265,7 @@ body {
   border-radius: 12px;
   padding: 16px 20px;
   margin-bottom: 32px;
-  background-image: url(/assets/img/coffee-background.png);
+  background-image: url(../assets/img/coffee-background.png);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -425,7 +425,7 @@ body {
   align-items: center;
   margin-bottom: 0px;
   background-color: #000000;
-  background-image: url(/assets/img/coffee-background.png);
+  background-image: url(../assets/img/coffee-background.png);
 }
 .Nosotros-bloque .col-md-6 {
   margin: 0;
