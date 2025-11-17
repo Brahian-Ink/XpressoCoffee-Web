@@ -56,7 +56,6 @@ body {
 .inicio {
   min-height: 100vh;
   backdrop-filter: blur(3px);
-
 }
 
 .inicio-container {
@@ -236,7 +235,6 @@ body {
 .eventos {
   min-height: 100vh;
   backdrop-filter: blur(3px);
-
 }
 
 .eventos-container {
@@ -296,7 +294,7 @@ body {
   border: 1px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
-  backdrop-filter: blur(10px);    /*Fondo borroso*/
+  backdrop-filter: blur(10px); /*Fondo borroso*/
 }
 
 .eventos-meses li:hover {
@@ -427,11 +425,11 @@ body {
   align-items: center;
   margin-bottom: 0px;
   background-color: #000000;
-  background-image: url(/assets/img/coffee-background.png); 
+  background-image: url(/assets/img/coffee-background.png);
 }
-.Nosotros-bloque .col-md-6{
- margin: 0;
- padding: 0;
+.Nosotros-bloque .col-md-6 {
+  margin: 0;
+  padding: 0;
 }
 
 .nosotros-texto h2 {
@@ -449,7 +447,7 @@ body {
 
 .nosotros-imagen img {
   max-width: 100%;
-  max-height:100%;
+  max-height: 100%;
 }
 
 /* Valores */
@@ -471,7 +469,7 @@ body {
   padding: 18px;
   height: 100%;
 }
-.nosotros-valores-row .col-md-4{
+.nosotros-valores-row .col-md-4 {
   padding-bottom: 50px;
 }
 
@@ -487,7 +485,7 @@ body {
 }
 /* ================= MARCAS ================= */
 
-.marcas{
+.marcas {
   min-height: 100vh;
   backdrop-filter: blur(3px);
 }
@@ -572,6 +570,77 @@ body {
   color: #ffffff;
 }
 
+/* ================= SECCIÓN CONTACTO ================= */
+
+.contacto {
+  min-height: 100vh;
+  backdrop-filter: blur(3px);
+
+}
+
+.contacto {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.contacto-info-row {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contacto-info-row h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contacto-header-row p {
+  font-size: 15px;
+  color: #d9d9d9;
+}
+
+/* Cuadro principal */
+.contacto-box {
+  background-color: #111111;
+  border-radius: 12px;
+  padding: 24px;
+  backdrop-filter: blur(4px);
+}
+
+/* Descripción inicial */
+.contacto-desc {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Bloques individuales */
+.contacto-item {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #262626;
+}
+
+.contacto-item h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.contacto-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Último ítem sin borde */
+.contacto-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 /* =========== FOOTER =========== */
 footer {
   background-color: #000000;
@@ -590,7 +659,6 @@ footer {
 
 .footer-column {
   margin-bottom: 24px;
-  
 }
 
 .footer-logo {
@@ -659,33 +727,31 @@ footer p {
     height: 80px;
   }
 
-   .nosotros-bloque {
+  .nosotros-bloque {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .nosotros-texto h2{
+  .nosotros-texto h2 {
     font-size: 30px;
     text-align: center;
   }
-  .nosotros-texto p{
+  .nosotros-texto p {
     font-size: 13px;
     text-align: center;
   }
-  .nosotros-valores-row h2{
-     font-size: 30px;
-     text-align: center;
+  .nosotros-valores-row h2 {
+    font-size: 30px;
+    text-align: center;
   }
-  .valor-card p{
-     font-size: 13px;
-     text-align: center;
+  .valor-card p {
+    font-size: 13px;
+    text-align: center;
   }
- 
 }
 
 /* Mobile */
 @media (max-width: 767.98px) {
-
   /* Home / Eventos */
   .footer-logo {
     height: 50px;
@@ -698,7 +764,7 @@ footer p {
   .beneficio-card {
     margin-bottom: 16px;
   }
-  .eventos-beneficios-row{
+  .eventos-beneficios-row {
     gap: 24px;
   }
   .eventos-proximos-row {
@@ -719,21 +785,18 @@ footer p {
     display: none;
   }
 
-
   .nosotros-texto {
     text-align: center;
-    
   }
 
   .nosotros-texto h2 {
     font-size: 24px;
   }
- .nosotros-texto p{
-  font-size: 15px;
- }
+  .nosotros-texto p {
+    font-size: 15px;
+  }
   .nosotros-valores-row {
     text-align: center;
-  
   }
 
   .nosotros-valores-row h2 {
@@ -742,20 +805,31 @@ footer p {
     margin-bottom: 16px;
   }
   .nosotros-valores-row .col-md-4 {
-      margin-bottom: 0px;
-    }
+    margin-bottom: 0px;
+  }
 
   .valor-card {
     margin-bottom: 16px;
     border: 0px;
   }
- .valor-card p{
-  font-size: 15px;
- }
+  .valor-card p {
+    font-size: 15px;
+  }
   .equipo-card {
     margin-bottom: 16px;
   }
+   .contacto-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 
+  .contacto-box {
+    padding: 20px;
+  }
+
+  .contacto-header-row {
+    margin-bottom: 24px;
+  }
   /* FOOTER */
   .footer-column {
     margin-bottom: 5px;
@@ -768,4 +842,3 @@ footer p {
     border-left: 0;
   }
 }
-
