@@ -260,7 +260,7 @@ body {
   color: #ffffff;
 }
 
-/* Calendario / filtro visual */
+/* Calendario */
 .eventos-calendario {
   border-radius: 12px;
   padding: 16px 20px;
@@ -421,13 +421,13 @@ body {
 
 /* Bloque historia */
 
-.Nosotros-bloque {
+.nosotros-bloque {
   align-items: center;
   margin-bottom: 0px;
   background-color: #000000;
   background-image: url(../assets/img/coffee-background.png);
 }
-.Nosotros-bloque .col-md-6 {
+.nosotros-bloque .col-md-6 {
   margin: 0;
   padding: 0;
 }
@@ -589,15 +589,10 @@ body {
   margin-bottom: 40px;
 }
 
-.contacto-info-row h1 {
+.contacto-info-row h2 {
   font-size: 28px;
   letter-spacing: 2px;
   margin-bottom: 10px;
-}
-
-.contacto-header-row p {
-  font-size: 15px;
-  color: #d9d9d9;
 }
 
 /* Cuadro principal */
